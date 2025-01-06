@@ -8,7 +8,7 @@
         .container{
             border: 2px solid black;
             display: grid;
-            grid-template-columns: 120px 100px;
+            grid-template-columns: [pehla] 120px [doosra] 100px [t];
             grid-template-rows: 100px 100px 100px;
 
         }
@@ -20,7 +20,8 @@
         
         .item-4{
             grid-row: 1/2 ;
-            grid-column: 1/2 ;
+            /* grid-column: doosra/t ; */
+            grid-column: pehla/t ;
         }
         /* After adding this grid 4 and 1 overlap */
         .item-1{
